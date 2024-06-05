@@ -1,0 +1,155 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+#menuToggle {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#menuToggle.active {
+    background-color: #000;
+    color: #fff;
+    left: 270px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button.on {
+    background-color: #004080;
+}
+
+button.off {
+    background-color: #ccc;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+#setThreshold {
+    background-color: #28a745;
+}
+
+#setThreshold:hover {
+    background-color: #218838;
+}
+
+.appliance-buttons {
+    margin-bottom: 20px;
+}
+
+.energy-settings {
+    margin-top: 20px;
+}
+
+#sidebarMenu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    transition: left 0.3s;
+}
+
+#sidebarMenu.active {
+    left: 0;
+}
+
+#sidebarMenu ul {
+    list-style: none;
+}
+
+#sidebarMenu li {
+    margin-bottom: 20px;
+}
+
+#sidebarMenu label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#sidebarMenu input[type="checkbox"] {
+    cursor: pointer;
+}
+
+#darkModeIcon {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+body.dark-mode #darkModeIcon {
+    transform: rotate(360deg);
+}
