@@ -76,4 +76,3 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Threshold set to:", threshold);
     });
 });
-
