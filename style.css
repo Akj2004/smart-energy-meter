@@ -66,19 +66,21 @@ h2 {
 
 button {
     padding: 10px 20px;
-    color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 button.on {
     background-color: #004080;
+    color: #fff;
 }
 
 button.off {
     background-color: #ccc;
+    color: #000;
 }
 
 button:hover {
