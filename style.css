@@ -26,14 +26,14 @@ body.dark-mode {
 header {
     background-color: #007bff;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px 10px;
     text-align: center;
     position: relative;
 }
 
 #menuToggle {
     position: absolute;
-    left: 20px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
     background: none;
@@ -53,6 +53,7 @@ header {
 h1 {
     font-size: 24px;
     font-weight: bold;
+    margin: 0 40px;
 }
 
 section {
@@ -154,5 +155,42 @@ input[type="number"] {
 
 body.dark-mode #darkModeIcon {
     transform: rotate(360deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    #menuToggle {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        width: 80px;
+    }
+
+    #sidebarMenu {
+        width: 200px;
+    }
+
+    #menuToggle.active {
+        left: 220px;
+    }
 }
 
