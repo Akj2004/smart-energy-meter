@@ -60,10 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 button.classList.remove("off");
                 button.classList.add("on");
                 button.style.backgroundColor = "#004080";
+                button.style.color = "#fff"; // Text color when on
             } else {
                 button.classList.remove("on");
                 button.classList.add("off");
                 button.style.backgroundColor = "#ccc";
+                button.style.color = "#000"; // Text color when off
             }
         });
     });
@@ -74,3 +76,4 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Threshold set to:", threshold);
     });
 });
+
